@@ -1974,9 +1974,7 @@ export default function App() {
           </div>
           <h1 className="text-2xl font-bold text-slate-800 text-center mb-2">{t('appName')}</h1>
           <p className="text-sm font-semibold text-indigo-600 text-center mb-2">{t('appSubtitle')}</p>
-          <p className="text-slate-500 text-center mb-6">
-            {authData.adminAccount ? t('roleChoosePrompt') : t('adminRegisterPrompt')}
-          </p>
+          <p className="text-slate-500 text-center mb-6">{t('roleChoosePrompt')}</p>
           {authMessage ? <p className="mb-4 text-sm text-indigo-600 text-center">{authMessage}</p> : null}
 
           <div className="flex justify-center gap-2 mb-6">
@@ -2002,46 +2000,19 @@ export default function App() {
             </button>
           </div>
 
-          {!authData.adminAccount ? (
-            <div className="space-y-4">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <input
-                  value={adminRegisterForm.name}
-                  onChange={(event) => setAdminRegisterForm({ ...adminRegisterForm, name: event.target.value })}
-                  placeholder={t('adminName')}
-                  className="w-full rounded-lg px-3 py-2"
-                />
-                <input
-                  value={adminRegisterForm.account}
-                  onChange={(event) => setAdminRegisterForm({ ...adminRegisterForm, account: event.target.value })}
-                  placeholder={t('account')}
-                  className="w-full rounded-lg px-3 py-2"
-                />
-                <PasswordInput
-                  value={adminRegisterForm.password}
-                  onChange={(event) => setAdminRegisterForm({ ...adminRegisterForm, password: event.target.value })}
-                  placeholder={t('password')}
-                  isVisible={showAdminPassword}
-                  onToggle={() => setShowAdminPassword((value) => !value)}
-                />
-                <PasswordInput
-                  value={adminRegisterForm.confirmPassword}
-                  onChange={(event) => setAdminRegisterForm({ ...adminRegisterForm, confirmPassword: event.target.value })}
-                  placeholder={t('confirmPassword')}
-                  isVisible={showAdminConfirmPassword}
-                  onToggle={() => setShowAdminConfirmPassword((value) => !value)}
-                />
-              </div>
-              <button onClick={registerAdmin} className="w-full bg-indigo-600 text-white px-4 py-2 rounded-lg">
-                {t('registerAdmin')}
-              </button>
-            </div>
-          ) : authScreen === 'choose' ? (
+          {authScreen === 'choose' ? (
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <button onClick={() => { setAuthScreen('admin'); setAuthMode('admin-login'); }} className="p-5 rounded-2xl border border-slate-200 text-left hover:border-indigo-600 hover:bg-indigo-50 transition">
+              <button
+                onClick={() => {
+                  setAuthScreen('admin');
+                  setAuthMode(authData.adminAccount ? 'admin-login' : 'admin-register');
+                  setAuthMessage('');
+                }}
+                className="p-5 rounded-2xl border border-slate-200 text-left hover:border-indigo-600 hover:bg-indigo-50 transition"
+              >
                 <User className="text-indigo-600 mb-3" />
                 <h3 className="font-semibold text-slate-800">{t('adminRole')}</h3>
-                <p className="text-sm text-slate-500 mt-1">{t('loginByAccount')}</p>
+                <p className="text-sm text-slate-500 mt-1">{authData.adminAccount ? t('loginByAccount') : t('adminRegisterPrompt')}</p>
               </button>
               <button onClick={() => { setAuthScreen('student'); setStudentAuthMode('student-login'); setAuthMessage(''); }} className="p-5 rounded-2xl border border-slate-200 text-left hover:border-blue-600 hover:bg-blue-50 transition">
                 <Book className="text-blue-600 mb-3" />
