@@ -799,6 +799,101 @@ span[class*="rounded-full"] {
   transform: translateY(-1px);
 }
 
+.student-calendar {
+  width: min(100%, 320px);
+  margin: 0 auto;
+  padding: 0.75rem;
+  border-radius: 8px;
+  background: #fff;
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  box-shadow: 0 10px 26px rgba(15, 23, 42, 0.08);
+}
+
+.student-calendar-title {
+  margin-bottom: 0.35rem;
+  text-align: center;
+  color: #334155;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.student-calendar-weekdays,
+.student-calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  text-align: center;
+}
+
+.student-calendar-weekdays {
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.28);
+  color: #64748b;
+  font-size: 0.7rem;
+  line-height: 1;
+}
+
+.student-calendar-days {
+  gap: 0.12rem;
+  padding-top: 0.35rem;
+  color: #475569;
+  font-size: 0.78rem;
+  line-height: 1;
+}
+
+.student-calendar-days span {
+  position: relative;
+  min-height: 1.35rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+}
+
+.student-calendar .weekend {
+  color: #ef4444;
+}
+
+.student-calendar-days .present {
+  color: #475569;
+  font-weight: 800;
+}
+
+.student-calendar-days .absent {
+  color: #ef4444;
+  font-weight: 800;
+}
+
+.student-calendar-days .present::after,
+.student-calendar-days .absent::after {
+  content: '';
+  position: absolute;
+  bottom: 0.05rem;
+  left: 50%;
+  width: 0.3rem;
+  height: 0.3rem;
+  border-radius: 999px;
+  transform: translateX(-50%);
+}
+
+.student-calendar-days .present::after {
+  background: #10b981;
+}
+
+.student-calendar-days .absent::after {
+  background: #ef4444;
+}
+
+.student-calendar-days .today {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+  color: #2563eb;
+  font-weight: 800;
+}
+
+.student-calendar-days .present.today {
+  color: #2563eb;
+}
+
 .schedule-board {
   display: grid;
   gap: 1rem;
@@ -878,6 +973,87 @@ span[class*="rounded-full"] {
   gap: 0.25rem;
 }
 
+.task-submission {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 0.85rem;
+  border: 1px solid rgba(148, 163, 184, 0.24);
+  border-radius: 0.75rem;
+  background: rgba(248, 250, 252, 0.78);
+}
+
+.task-submission-thumb,
+.task-submission-mini {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-shrink: 0;
+  border: 1px solid rgba(148, 163, 184, 0.24);
+  background: rgba(15, 23, 42, 0.04);
+}
+
+.task-submission-thumb {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 0.75rem;
+}
+
+.task-submission-mini {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.65rem;
+}
+
+.task-submission-thumb img,
+.task-submission-mini img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.submission-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: rgba(2, 6, 23, 0.72);
+  backdrop-filter: blur(8px);
+}
+
+.submission-modal-card {
+  width: min(960px, 100%);
+  max-height: min(90vh, 760px);
+  overflow: auto;
+  padding: 1.25rem;
+  border: 1px solid rgba(148, 163, 184, 0.26);
+  border-radius: 1rem;
+  background: #fff;
+  box-shadow: 0 30px 90px rgba(2, 6, 23, 0.35);
+}
+
+.submission-modal-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 320px;
+  overflow: hidden;
+  border-radius: 0.85rem;
+  background: rgba(15, 23, 42, 0.06);
+}
+
+.submission-modal-image img {
+  max-width: 100%;
+  max-height: 64vh;
+  object-fit: contain;
+  display: block;
+}
+
 .password-field {
   position: relative;
   width: 100%;
@@ -916,6 +1092,17 @@ span[class*="rounded-full"] {
 .password-toggle:hover {
   background: rgba(37, 99, 235, 0.08);
   color: var(--accent);
+}
+
+.password-hint {
+  margin: -0.35rem 0 0;
+  color: var(--red-600);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.password-hint.strong {
+  color: var(--emerald-600);
 }
 
 .auth-card .grid .password-toggle:hover,
@@ -1112,6 +1299,38 @@ html[data-theme="night"] .avatar-preview {
   color: #93c5fd;
 }
 
+html[data-theme="night"] .student-calendar {
+  background: rgba(15, 23, 42, 0.92);
+  border-color: rgba(148, 163, 184, 0.22);
+  box-shadow: none;
+}
+
+html[data-theme="night"] .student-calendar-title {
+  color: #e5edf8;
+}
+
+html[data-theme="night"] .student-calendar-weekdays {
+  color: #94a3b8;
+  border-bottom-color: rgba(148, 163, 184, 0.24);
+}
+
+html[data-theme="night"] .student-calendar-days {
+  color: #cbd5e1;
+}
+
+html[data-theme="night"] .student-calendar-days .today {
+  outline-color: #93c5fd;
+  color: #93c5fd;
+}
+
+html[data-theme="night"] .student-calendar-days .present {
+  color: #cbd5e1;
+}
+
+html[data-theme="night"] .student-calendar-days .present.today {
+  color: #93c5fd;
+}
+
 html[data-theme="night"] .schedule-date,
 html[data-theme="night"] .schedule-time {
   background: rgba(37, 99, 235, 0.18);
@@ -1121,6 +1340,26 @@ html[data-theme="night"] .schedule-time {
 html[data-theme="night"] .schedule-meta span {
   background: rgba(15, 23, 42, 0.88);
   color: #c8d3e3;
+}
+
+html[data-theme="night"] .task-submission {
+  border-color: rgba(148, 163, 184, 0.22);
+  background: rgba(15, 23, 42, 0.72);
+}
+
+html[data-theme="night"] .task-submission-thumb,
+html[data-theme="night"] .task-submission-mini {
+  border-color: rgba(148, 163, 184, 0.22);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+html[data-theme="night"] .submission-modal-card {
+  border-color: rgba(148, 163, 184, 0.24);
+  background: #0f172a;
+}
+
+html[data-theme="night"] .submission-modal-image {
+  background: rgba(2, 6, 23, 0.56);
 }
 
 html[data-theme="night"] .app-sidebar {

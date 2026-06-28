@@ -299,6 +299,8 @@ const UI_TEXT = {
     email: 'Email',
     subject: 'Предмет',
     groupId: 'Group ID',
+    editProfile: 'Редактировать профиль',
+    cancel: 'Отмена',
     save: 'Сохранить',
     resetForm: 'Сбросить',
     schedule: 'Расписание',
@@ -321,10 +323,21 @@ const UI_TEXT = {
     markDone: 'Отметить',
     done: 'Выполнено',
     inProgress: 'В работе',
+    uploadSubmission: 'Загрузить фото работы',
+    submitted: 'Сдано',
+    submittedBy: 'Сдал',
+    submittedAt: 'Время сдачи',
+    verified: 'Проверено',
+    verifySubmission: 'Проверить',
+    submissionPhoto: 'Фото задания',
     profile: 'Мой профиль',
     progress: 'Мой прогресс',
+    attendanceCalendar: 'Календарь посещаемости',
     attendanceProgress: 'Посещаемость',
     averageGrade: 'Средний балл',
+    grade: 'Оценка',
+    came: 'Пришел',
+    didNotCome: 'Не пришел',
     upcomingClasses: 'Ближайшие занятия',
     grades: 'Мои оценки',
     noRecords: 'Пока нет записей.',
@@ -337,11 +350,16 @@ const UI_TEXT = {
     adminRegistered: 'Мугалим зарегистрирован.',
     invalidAdminLogin: 'Неверный аккаунт или пароль мугалима.',
     fillAdminFields: 'Заполни имя, аккаунт и пароль.',
-    fillStudentFields: 'Заполни имя, телефон, email, пол, аккаунт и пароль.',
+    fillStudentFields: 'Заполни имя, телефон, email, пол и пароль.',
     fillStudentLoginFields: 'Введи аккаунт и пароль.',
     invalidStudentLogin: 'Неверный аккаунт или пароль студента.',
     studentAccountExists: 'Такой аккаунт уже занят.',
     passwordMismatch: 'Пароли не совпадают.',
+    passwordNeedLength: 'Пароль должен быть минимум 8 символов.',
+    passwordNeedLetters: 'Добавь буквы, не используй только цифры.',
+    passwordNeedUppercase: 'Добавь хотя бы одну большую букву.',
+    passwordNeedSymbol: 'Добавь символ: ! . _ @ # или похожий.',
+    passwordStrong: 'Пароль хороший.',
     createdCode: 'Код создан',
   },
   kg: {
@@ -415,6 +433,8 @@ const UI_TEXT = {
     email: 'Email',
     subject: 'Пән',
     groupId: 'Group ID',
+    editProfile: 'Профилди өзгөртүү',
+    cancel: 'Жокко чыгаруу',
     save: 'Сактоо',
     resetForm: 'Тазалоо',
     schedule: 'Расписание',
@@ -437,10 +457,21 @@ const UI_TEXT = {
     markDone: 'Белгилөө',
     done: 'Аяктады',
     inProgress: 'Аткарылып жатат',
+    uploadSubmission: 'Иштин сүрөтүн жүктөө',
+    submitted: 'Тапшырылды',
+    submittedBy: 'Тапшырган',
+    submittedAt: 'Тапшырган убактысы',
+    verified: 'Текшерилди',
+    verifySubmission: 'Текшерүү',
+    submissionPhoto: 'Тапшырманын сүрөтү',
     profile: 'Менин профилим',
     progress: 'Менин прогрессим',
+    attendanceCalendar: 'Катышуу календары',
     attendanceProgress: 'Катышуу',
     averageGrade: 'Орточо баа',
+    grade: 'Баа',
+    came: 'Келди',
+    didNotCome: 'Келген жок',
     upcomingClasses: 'Жакынкы сабактар',
     grades: 'Менин бааларым',
     noRecords: 'Азырынча жазуулар жок.',
@@ -453,11 +484,16 @@ const UI_TEXT = {
     adminRegistered: 'Мугалим катталды.',
     invalidAdminLogin: 'Мугалимдин аккаунту же сырсөзү туура эмес.',
     fillAdminFields: 'Аты, аккаунт жана сырсөздү толтуруңуз.',
-    fillStudentFields: 'Аты, телефон, email, жынысы, аккаунт жана сырсөздү толтуруңуз.',
+    fillStudentFields: 'Аты, телефон, email, жынысы жана сырсөздү толтуруңуз.',
     fillStudentLoginFields: 'Аккаунт жана сырсөздү жазыңыз.',
     invalidStudentLogin: 'Студенттин аккаунту же сырсөзү туура эмес.',
     studentAccountExists: 'Бул аккаунт бош эмес.',
     passwordMismatch: 'Сырсөздөр дал келбейт.',
+    passwordNeedLength: 'Сырсөз кеминде 8 белги болушу керек.',
+    passwordNeedLetters: 'Тамгаларды кошуңуз, бир гана цифра болбосун.',
+    passwordNeedUppercase: 'Жок дегенде бир чоң тамга кошуңуз.',
+    passwordNeedSymbol: 'Белги кошуңуз: ! . _ @ # же ушуга окшош.',
+    passwordStrong: 'Сырсөз жакшы.',
     createdCode: 'Код түзүлдү',
   },
   en: {
@@ -531,6 +567,8 @@ const UI_TEXT = {
     email: 'Email',
     subject: 'Subject',
     groupId: 'Group ID',
+    editProfile: 'Edit profile',
+    cancel: 'Cancel',
     save: 'Save',
     resetForm: 'Reset',
     schedule: 'Schedule',
@@ -553,10 +591,21 @@ const UI_TEXT = {
     markDone: 'Mark done',
     done: 'Done',
     inProgress: 'In progress',
+    uploadSubmission: 'Upload work photo',
+    submitted: 'Submitted',
+    submittedBy: 'Submitted by',
+    submittedAt: 'Submitted at',
+    verified: 'Verified',
+    verifySubmission: 'Verify',
+    submissionPhoto: 'Assignment photo',
     profile: 'My profile',
     progress: 'My progress',
+    attendanceCalendar: 'Attendance calendar',
     attendanceProgress: 'Attendance',
     averageGrade: 'Average grade',
+    grade: 'Grade',
+    came: 'Came',
+    didNotCome: 'Did not come',
     upcomingClasses: 'Upcoming classes',
     grades: 'My grades',
     noRecords: 'No records yet.',
@@ -569,11 +618,16 @@ const UI_TEXT = {
     adminRegistered: 'Mugalim registered.',
     invalidAdminLogin: 'Invalid mugalim account or password.',
     fillAdminFields: 'Fill in name, account, and password.',
-    fillStudentFields: 'Fill in name, phone, email, gender, account, and password.',
+    fillStudentFields: 'Fill in name, phone, email, gender, and password.',
     fillStudentLoginFields: 'Enter account and password.',
     invalidStudentLogin: 'Invalid student account or password.',
     studentAccountExists: 'This account is already taken.',
     passwordMismatch: 'Passwords do not match.',
+    passwordNeedLength: 'Password must be at least 8 characters.',
+    passwordNeedLetters: 'Add letters, do not use only numbers.',
+    passwordNeedUppercase: 'Add at least one uppercase letter.',
+    passwordNeedSymbol: 'Add a symbol: ! . _ @ # or similar.',
+    passwordStrong: 'Password looks good.',
     createdCode: 'Code created',
   },
 };
@@ -681,11 +735,56 @@ const getAttendanceLabel = (status, language = 'ru') => {
   return status;
 };
 
+const parseLocalDate = (value) => {
+  const [day, month, year] = String(value || '').split('.').map(Number);
+  if (!day || !month || !year) return null;
+  return new Date(year, month - 1, day);
+};
+
+const toJournalDate = (date) => {
+  const day = String(date.getDate()).padStart(2, '0');
+  const month = String(date.getMonth() + 1).padStart(2, '0');
+  return `${day}.${month}.${date.getFullYear()}`;
+};
+
+const buildCalendarDays = (monthDate) => {
+  const year = monthDate.getFullYear();
+  const month = monthDate.getMonth();
+  const daysInMonth = new Date(year, month + 1, 0).getDate();
+  const firstDay = new Date(year, month, 1).getDay();
+  const leadingEmptyDays = firstDay === 0 ? 6 : firstDay - 1;
+
+  return [
+    ...Array.from({ length: leadingEmptyDays }, () => null),
+    ...Array.from({ length: daysInMonth }, (_, index) => new Date(year, month, index + 1)),
+  ];
+};
+
+const getMonthTitle = (date, language = 'ru') => {
+  const monthNames = {
+    ru: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
+    kg: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
+    en: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+  };
+  return `${monthNames[language]?.[date.getMonth()] || monthNames.ru[date.getMonth()]} ${date.getFullYear()}`;
+};
+
 const getGenderLabel = (gender, language = 'ru') => {
   if (gender === 'male') return getText(language, 'male');
   if (gender === 'female') return getText(language, 'female');
   return gender || '-';
 };
+
+const getPasswordStrengthMessageKey = (password) => {
+  if (!password) return '';
+  if (password.length < 8) return 'passwordNeedLength';
+  if (!/[A-Za-zА-Яа-яЁё]/.test(password)) return 'passwordNeedLetters';
+  if (!/[A-ZА-ЯЁ]/.test(password)) return 'passwordNeedUppercase';
+  if (!/[^A-Za-zА-Яа-яЁё0-9]/.test(password)) return 'passwordNeedSymbol';
+  return 'passwordStrong';
+};
+
+const isStrongPassword = (password) => getPasswordStrengthMessageKey(password) === 'passwordStrong';
 
 const getScheduleDateParts = (date, language = 'ru') => {
   const [day = '', month = '', year = ''] = String(date || '').split('.');
@@ -776,6 +875,7 @@ export default function App() {
   const [editingCourseId, setEditingCourseId] = useState(null);
   const [editingScheduleId, setEditingScheduleId] = useState(null);
   const [editingTaskId, setEditingTaskId] = useState(null);
+  const [isEditingProfile, setIsEditingProfile] = useState(false);
   const [selectedJournalDate, setSelectedJournalDate] = useState(
     MOCK_DATA.journal[0]?.date || MOCK_DATA.schedule[0]?.date || ''
   );
@@ -796,6 +896,15 @@ export default function App() {
     password: '',
     confirmPassword: '',
   });
+  const [profileForm, setProfileForm] = useState({
+    name: '',
+    phone: '',
+    email: '',
+    gender: 'male',
+    avatar: '',
+  });
+  const [previewSubmission, setPreviewSubmission] = useState(null);
+  const [currentDate, setCurrentDate] = useState(() => new Date());
   const [authMessage, setAuthMessage] = useState('');
   const [showAdminPassword, setShowAdminPassword] = useState(false);
   const [showAdminConfirmPassword, setShowAdminConfirmPassword] = useState(false);
@@ -831,6 +940,14 @@ export default function App() {
     }
   }, [theme]);
 
+  useEffect(() => {
+    const timer = window.setInterval(() => {
+      setCurrentDate(new Date());
+    }, 30000);
+
+    return () => window.clearInterval(timer);
+  }, []);
+
   const allowedViews = currentUser
     ? {
         admin: ['dashboard', 'users', 'courses', 'schedule', 'journal', 'tasks'],
@@ -854,6 +971,11 @@ export default function App() {
 
     if (!name || !account || !password) {
       setAuthMessage(t('fillAdminFields'));
+      return;
+    }
+
+    if (!isStrongPassword(password)) {
+      setAuthMessage(t(getPasswordStrengthMessageKey(password)));
       return;
     }
 
@@ -920,6 +1042,7 @@ export default function App() {
 
   const loginStudent = () => {
     const account = studentLoginForm.account.trim();
+    const normalizedAccount = account.toLowerCase();
     const password = studentLoginForm.password.trim();
 
     if (!account || !password) {
@@ -928,7 +1051,10 @@ export default function App() {
     }
 
     const student = appData.users.find(
-      (user) => user.role === 'student' && user.account === account && user.password === password
+      (user) =>
+        user.role === 'student' &&
+        (user.account?.toLowerCase() === normalizedAccount || user.email?.toLowerCase() === normalizedAccount) &&
+        user.password === password
     );
 
     if (!student) {
@@ -955,11 +1081,16 @@ export default function App() {
     const email = studentLoginForm.email.trim();
     const gender = studentLoginForm.gender;
     const avatar = studentLoginForm.avatar;
-    const account = studentLoginForm.account.trim();
+    const account = email.toLowerCase();
     const password = studentLoginForm.password.trim();
 
-    if (!name || !phone || !email || !gender || !account || !password) {
+    if (!name || !phone || !email || !gender || !password) {
       setAuthMessage(t('fillStudentFields'));
+      return;
+    }
+
+    if (!isStrongPassword(password)) {
+      setAuthMessage(t(getPasswordStrengthMessageKey(password)));
       return;
     }
 
@@ -968,7 +1099,7 @@ export default function App() {
       return;
     }
 
-    const accountOwner = appData.users.find((user) => user.role === 'student' && user.account === account);
+    const accountOwner = appData.users.find((user) => user.role === 'student' && user.account?.toLowerCase() === account);
     const normalizedEmail = email.toLowerCase();
     const normalizedPhone = normalizeCodeValue(phone);
     const existingStudent = appData.users.find(
@@ -1050,6 +1181,76 @@ export default function App() {
       setStudentLoginForm((previous) => ({ ...previous, avatar: String(reader.result || '') }));
     };
     reader.readAsDataURL(file);
+  };
+
+  const handleProfileAvatarChange = (event) => {
+    const file = event.target.files?.[0];
+    if (!file) return;
+
+    const reader = new FileReader();
+    reader.onload = () => {
+      setProfileForm((previous) => ({ ...previous, avatar: String(reader.result || '') }));
+    };
+    reader.readAsDataURL(file);
+  };
+
+  const getTaskSubmission = (task, studentId) =>
+    (task.submissions || []).find((submission) => submission.studentId === studentId);
+
+  const handleTaskSubmissionChange = (taskId, event) => {
+    const file = event.target.files?.[0];
+    if (!file || !currentUser) return;
+
+    const reader = new FileReader();
+    reader.onload = () => {
+      const photo = String(reader.result || '');
+      const submittedAt = new Date().toLocaleString(language === 'en' ? 'en-US' : 'ru-RU');
+
+      setAppData((previous) => ({
+        ...previous,
+        tasks: previous.tasks.map((task) => {
+          if (task.id !== taskId) return task;
+
+          const otherSubmissions = (task.submissions || []).filter(
+            (submission) => submission.studentId !== currentUser.id
+          );
+
+          return {
+            ...task,
+            submissions: [
+              ...otherSubmissions,
+              {
+                studentId: currentUser.id,
+                studentName: currentUser.name,
+                photo,
+                submittedAt,
+                verified: false,
+              },
+            ],
+          };
+        }),
+      }));
+    };
+    reader.readAsDataURL(file);
+    event.target.value = '';
+  };
+
+  const toggleTaskSubmissionVerified = (taskId, studentId) => {
+    setAppData((previous) => ({
+      ...previous,
+      tasks: previous.tasks.map((task) =>
+        task.id === taskId
+          ? {
+              ...task,
+              submissions: (task.submissions || []).map((submission) =>
+                submission.studentId === studentId
+                  ? { ...submission, verified: !submission.verified }
+                  : submission
+              ),
+            }
+          : task
+      ),
+    }));
   };
 
   const menuItems = currentUser
@@ -1142,6 +1343,55 @@ export default function App() {
       subject: user.subject || '',
       groupId: String(user.groupId || 1),
     });
+  };
+
+  const startProfileEdit = () => {
+    if (!currentUser) return;
+    setAuthMessage('');
+    setProfileForm({
+      name: currentUser.name || '',
+      phone: currentUser.phone || '',
+      email: currentUser.email || '',
+      gender: currentUser.gender || 'male',
+      avatar: currentUser.avatar || '',
+    });
+    setIsEditingProfile(true);
+  };
+
+  const cancelProfileEdit = () => {
+    setAuthMessage('');
+    setIsEditingProfile(false);
+  };
+
+  const saveProfile = () => {
+    if (!currentUser) return;
+
+    const name = profileForm.name.trim();
+    const phone = profileForm.phone.trim();
+    const email = profileForm.email.trim();
+
+    if (!name || !phone || !email) {
+      setAuthMessage(t('fillStudentFields'));
+      return;
+    }
+
+    setAppData((previous) => ({
+      ...previous,
+      users: previous.users.map((user) =>
+        user.id === currentUser.id
+          ? {
+              ...user,
+              name,
+              phone,
+              email,
+              gender: profileForm.gender,
+              avatar: profileForm.avatar,
+            }
+          : user
+      ),
+    }));
+    setAuthMessage('');
+    setIsEditingProfile(false);
   };
 
   const saveCourse = () => {
@@ -1301,48 +1551,6 @@ export default function App() {
         <StatCard title={t('totalStudents')} value={String(appData.users.filter((user) => user.role === 'student').length)} icon={Users} colorClass="bg-blue-100 text-blue-600" />
         <StatCard title={t('activeCourses')} value={String(appData.courses.filter((course) => course.status === 'Активный').length)} icon={BookOpen} colorClass="bg-indigo-100 text-indigo-600" />
         <StatCard title={t('classesToday')} value={String(appData.schedule.length)} icon={Calendar} colorClass="bg-emerald-100 text-emerald-600" />
-      </div>
-
-      <div className="bg-white rounded-xl shadow-sm border border-slate-100 p-6">
-        <div className="flex items-center justify-between gap-4 mb-4">
-          <h3 className="font-bold text-slate-800">{t('attendanceTitle')}</h3>
-          <span className="text-sm text-slate-500">{t('byJournal')}</span>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {appData.users
-            .filter((user) => user.role === 'student')
-            .map((student) => {
-              const studentEntries = appData.journal.filter((entry) => entry.studentId === student.id);
-              const totalEntries = studentEntries.length;
-              const presentEntries = studentEntries.filter((entry) => entry.status === 'present' || entry.status === 'late').length;
-              const attendancePercent = totalEntries ? Math.round((presentEntries / totalEntries) * 100) : 0;
-              const lastEntry = studentEntries[studentEntries.length - 1];
-
-              return (
-                <div key={student.id} className="rounded-xl border border-slate-100 p-4 bg-slate-50">
-                  <div className="flex items-center justify-between gap-3 mb-2">
-                    <div>
-                      <p className="font-medium text-slate-800">{student.name}</p>
-                      <p className="text-xs text-slate-500">{student.email}</p>
-                    </div>
-                    <span className="text-lg font-bold text-slate-800">{attendancePercent}%</span>
-                  </div>
-                  <div className="w-full bg-slate-100 rounded-full h-2">
-                    <div
-                      className={`h-2 rounded-full ${
-                        attendancePercent >= 90 ? 'bg-emerald-500' : attendancePercent >= 75 ? 'bg-amber-500' : 'bg-red-500'
-                      }`}
-                      style={{ width: `${attendancePercent}%` }}
-                    />
-                  </div>
-                  <div className="mt-3 text-xs text-slate-500 flex items-center justify-between gap-3">
-                    <span>{language === 'kg' ? 'Жазуулар:' : language === 'en' ? 'Entries:' : 'Записей:'} {totalEntries}</span>
-                    <span>{lastEntry ? `${language === 'kg' ? 'Акыркы статус:' : language === 'en' ? 'Last status:' : 'Последний статус:'} ${getAttendanceLabel(lastEntry.status, language)}` : t('noRecords')}</span>
-                  </div>
-                </div>
-              );
-            })}
-        </div>
       </div>
 
       <div className="bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden">
@@ -1748,25 +1956,67 @@ export default function App() {
       </div>
 
       <div className="space-y-3">
-        {appData.tasks.map((task) => (
-          <div key={task.id} className="bg-white rounded-xl shadow-sm border border-slate-100 p-4 flex items-center justify-between gap-4">
-            <div>
-              <h3 className="font-medium text-slate-800">{task.title}</h3>
-              <p className="text-sm text-slate-500">{task.deadline} • {task.status}</p>
+        {appData.tasks.map((task) => {
+          const submissions = task.submissions || [];
+
+          return (
+            <div key={task.id} className="bg-white rounded-xl shadow-sm border border-slate-100 p-4 space-y-4">
+              <div className="flex items-center justify-between gap-4">
+                <div>
+                  <h3 className="font-medium text-slate-800">{task.title}</h3>
+                  <p className="text-sm text-slate-500">{task.deadline} • {task.status} • {submissions.length} {t('submitted')}</p>
+                </div>
+                <div className="flex items-center gap-2">
+                  <button onClick={() => editTask(task)} className="p-2 text-slate-400 hover:text-indigo-600 rounded-lg hover:bg-indigo-50">
+                    <Edit2 size={18} />
+                  </button>
+                  <button onClick={() => removeListItem('tasks', task.id)} className="p-2 text-slate-400 hover:text-red-600 rounded-lg hover:bg-red-50">
+                    <Trash2 size={18} />
+                  </button>
+                </div>
+              </div>
+              {submissions.length ? (
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                  {submissions.map((submission) => {
+                    const student = appData.users.find((user) => user.id === submission.studentId);
+
+                    return (
+                      <div key={submission.studentId} className="task-submission">
+                        <a href={submission.photo} target="_blank" rel="noreferrer" className="task-submission-thumb" title={t('submissionPhoto')}>
+                          <img src={submission.photo} alt={t('submissionPhoto')} />
+                        </a>
+                        <div className="min-w-0">
+                          <p className="font-medium text-slate-800">{t('submittedBy')}: {student?.name || submission.studentName}</p>
+                          <p className="text-sm text-slate-500">{t('submittedAt')}: {submission.submittedAt}</p>
+                          <button
+                            onClick={() =>
+                              setPreviewSubmission({
+                                taskId: task.id,
+                                taskTitle: task.title,
+                                studentId: submission.studentId,
+                                studentName: student?.name || submission.studentName,
+                                photo: submission.photo,
+                                submittedAt: submission.submittedAt,
+                                verified: submission.verified,
+                              })
+                            }
+                            className={`mt-2 px-3 py-1.5 rounded-lg text-xs font-medium ${
+                              submission.verified ? 'bg-emerald-100 text-emerald-700' : 'bg-indigo-50 text-indigo-700'
+                            }`}
+                          >
+                            {submission.verified ? t('verified') : t('verifySubmission')}
+                          </button>
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              ) : (
+                <p className="text-sm text-slate-500">{t('noRecords')}</p>
+              )}
             </div>
-            <div className="flex items-center gap-2">
-              <button onClick={() => toggleTaskDone(task.id)} className="px-3 py-2 rounded-lg bg-emerald-50 text-emerald-700">
-                {task.done ? t('done') : t('markDone')}
-              </button>
-              <button onClick={() => editTask(task)} className="p-2 text-slate-400 hover:text-indigo-600 rounded-lg hover:bg-indigo-50">
-                <Edit2 size={18} />
-              </button>
-              <button onClick={() => removeListItem('tasks', task.id)} className="p-2 text-slate-400 hover:text-red-600 rounded-lg hover:bg-red-50">
-                <Trash2 size={18} />
-              </button>
-            </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </div>
   );
@@ -1774,55 +2024,175 @@ export default function App() {
   const studentDashboard = () => {
     const studentTasks = appData.tasks.filter((task) => task.groupId === currentUser?.groupId);
     const studentGrades = appData.journal.filter((entry) => entry.studentId === currentUser?.id);
-    const totalEntries = studentGrades.length;
-    const presentEntries = studentGrades.filter((entry) => entry.status === 'present' || entry.status === 'late').length;
-    const attendancePercent = totalEntries ? Math.round((presentEntries / totalEntries) * 100) : 0;
-    const averageGrade = totalEntries
-      ? (studentGrades.reduce((sum, entry) => sum + (Number(entry.grade) || 0), 0) / totalEntries).toFixed(1)
-      : '0.0';
-    const averageGradePercent = Math.min(100, Math.round((Number(averageGrade) / 5) * 100));
+    const sortedStudentGrades = [...studentGrades].sort((first, second) => {
+      const firstDate = parseLocalDate(first.date);
+      const secondDate = parseLocalDate(second.date);
+      return (firstDate?.getTime() || 0) - (secondDate?.getTime() || 0);
+    });
+    const calendarBaseDate = currentDate;
+    const attendanceByDate = sortedStudentGrades.reduce((acc, entry) => ({ ...acc, [entry.date]: entry }), {});
+    const calendarDays = buildCalendarDays(calendarBaseDate);
+    const weekdayLabels =
+      language === 'en'
+        ? ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+        : language === 'kg'
+          ? ['Дш', 'Шш', 'Шр', 'Бш', 'Жм', 'Иш', 'Жк']
+          : ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс'];
 
     return (
       <div className="space-y-6">
-        <div className="flex items-center gap-4 bg-white p-6 rounded-xl shadow-sm border border-slate-100">
-          <div className="avatar-large w-16 h-16 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-2xl font-bold">
-            {currentUser?.avatar ? <img src={currentUser.avatar} alt={currentUser?.name} /> : currentUser?.name?.charAt(0)}
-          </div>
-          <div>
-            <h2 className="text-2xl font-bold text-slate-800">{currentUser?.name}</h2>
-            <p className="text-slate-500">{language === 'en' ? 'Group: FR-2026 • Frontend Development' : language === 'kg' ? 'Топ: FR-2026 • Frontend иштеп чыгуу' : 'Группа: FR-2026 • Frontend Разработка'}</p>
-            <div className="flex gap-2 mt-4 flex-wrap">
-              <span className="px-3 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-700">{currentUser?.phone || t('phone')}</span>
-              <span className="px-3 py-1 rounded-full text-xs font-medium bg-emerald-100 text-emerald-700">{currentUser?.email}</span>
-              <span className="px-3 py-1 rounded-full text-xs font-medium bg-purple-100 text-purple-700">{getGenderLabel(currentUser?.gender, language)}</span>
+        <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
+          {isEditingProfile ? (
+            <div className="flex flex-col lg:flex-row gap-6">
+              <div className="avatar-picker lg:w-64">
+                <div className="avatar-preview rounded-full bg-blue-100 text-blue-600 flex items-center justify-center font-bold">
+                  {profileForm.avatar ? (
+                    <img src={profileForm.avatar} alt={t('avatar')} />
+                  ) : (
+                    profileForm.name.trim().charAt(0) || <User size={28} />
+                  )}
+                </div>
+                <div>
+                  <p className="font-medium text-slate-800">{t('avatar')}</p>
+                  <label className="avatar-upload-button bg-slate-100 text-slate-700 px-4 py-2 rounded-lg">
+                    {t('uploadAvatar')}
+                    <input type="file" accept="image/*" onChange={handleProfileAvatarChange} className="hidden" />
+                  </label>
+                </div>
+              </div>
+              <div className="flex-1">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <input
+                    value={profileForm.name}
+                    onChange={(event) => setProfileForm({ ...profileForm, name: event.target.value })}
+                    placeholder={t('name')}
+                    className="rounded-lg px-3 py-2"
+                  />
+                  <input
+                    value={profileForm.phone}
+                    onChange={(event) => setProfileForm({ ...profileForm, phone: event.target.value })}
+                    placeholder={t('phone')}
+                    className="rounded-lg px-3 py-2"
+                  />
+                  <input
+                    type="email"
+                    value={profileForm.email}
+                    onChange={(event) => setProfileForm({ ...profileForm, email: event.target.value })}
+                    placeholder={t('email')}
+                    className="rounded-lg px-3 py-2"
+                  />
+                  <select
+                    value={profileForm.gender}
+                    onChange={(event) => setProfileForm({ ...profileForm, gender: event.target.value })}
+                    className="rounded-lg px-3 py-2"
+                  >
+                    <option value="male">{t('male')}</option>
+                    <option value="female">{t('female')}</option>
+                  </select>
+                </div>
+                <div className="flex gap-3 mt-4 flex-wrap">
+                  <button onClick={saveProfile} className="bg-indigo-600 text-white px-4 py-2 rounded-lg">{t('save')}</button>
+                  <button onClick={cancelProfileEdit} className="bg-slate-100 text-slate-700 px-4 py-2 rounded-lg">{t('cancel')}</button>
+                </div>
+                {authMessage ? <p className="text-sm text-red-500 mt-3">{authMessage}</p> : null}
+              </div>
             </div>
-          </div>
+          ) : (
+            <div className="flex items-center justify-between gap-4">
+              <div className="flex items-center gap-4">
+                <div className="avatar-large w-16 h-16 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-2xl font-bold">
+                  {currentUser?.avatar ? <img src={currentUser.avatar} alt={currentUser?.name} /> : currentUser?.name?.charAt(0)}
+                </div>
+                <div>
+                  <h2 className="text-2xl font-bold text-slate-800">{currentUser?.name}</h2>
+                  <p className="text-slate-500">{language === 'en' ? 'Group: FR-2026 • Frontend Development' : language === 'kg' ? 'Топ: FR-2026 • Frontend иштеп чыгуу' : 'Группа: FR-2026 • Frontend Разработка'}</p>
+                  <div className="flex gap-2 mt-4 flex-wrap">
+                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-700">{currentUser?.phone || t('phone')}</span>
+                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-emerald-100 text-emerald-700">{currentUser?.email}</span>
+                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-purple-100 text-purple-700">{getGenderLabel(currentUser?.gender, language)}</span>
+                  </div>
+                </div>
+              </div>
+              <button onClick={startProfileEdit} className="p-2 text-slate-400 hover:text-indigo-600 rounded-lg hover:bg-indigo-50" title={t('editProfile')}>
+                <Edit2 size={18} />
+              </button>
+            </div>
+          )}
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
-            <h3 className="font-bold text-slate-800 mb-4 flex items-center gap-2">
-              <BarChart className="text-indigo-600" size={20} /> {t('progress')}
-            </h3>
-            <div className="space-y-4">
-              <div>
-                <div className="flex justify-between text-sm mb-1">
-                  <span className="text-slate-600">{t('attendanceProgress')}</span>
-                  <span className="font-medium text-slate-800">{attendancePercent}%</span>
+          <div className="space-y-6">
+            <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
+              <div className="flex items-center justify-between gap-4 mb-4">
+                <h3 className="font-bold text-slate-800 flex items-center gap-2">
+                  <Calendar className="text-indigo-600" size={20} /> {t('attendanceCalendar')}
+                </h3>
+              </div>
+              <div className="student-calendar">
+                <div className="student-calendar-title">{getMonthTitle(calendarBaseDate, language)}</div>
+                <div className="student-calendar-weekdays">
+                  {weekdayLabels.map((day, index) => (
+                    <span key={day} className={index >= 5 ? 'weekend' : ''}>{day}</span>
+                  ))}
                 </div>
-                <div className="w-full bg-slate-100 rounded-full h-2">
-                  <div className="bg-emerald-500 h-2 rounded-full" style={{ width: `${attendancePercent}%` }}></div>
+                <div className="student-calendar-days">
+                  {calendarDays.map((day, index) => {
+                    if (!day) {
+                      return <span key={`empty-${index}`} />;
+                    }
+
+                    const journalDate = toJournalDate(day);
+                    const entry = attendanceByDate[journalDate];
+                    const isPresent = entry?.status === 'present' || entry?.status === 'late';
+                    const isWeekend = day.getDay() === 0 || day.getDay() === 6;
+                    const isToday = journalDate === toJournalDate(currentDate);
+                    const statusClass = [
+                      entry ? (isPresent ? 'present' : 'absent') : isWeekend ? 'weekend' : '',
+                      isToday ? 'today' : '',
+                    ]
+                      .filter(Boolean)
+                      .join(' ');
+
+                    return (
+                      <span
+                        key={journalDate}
+                        className={statusClass}
+                        title={entry ? getAttendanceLabel(entry.status, language) : t('noRecords')}
+                      >
+                        {day.getDate()}
+                      </span>
+                    );
+                  })}
                 </div>
               </div>
-              <div>
-                <div className="flex justify-between text-sm mb-1">
-                  <span className="text-slate-600">{t('averageGrade')}</span>
-                  <span className="font-medium text-slate-800">{averageGrade}</span>
-                </div>
-                <div className="w-full bg-slate-100 rounded-full h-2">
-                  <div className="bg-blue-500 h-2 rounded-full" style={{ width: `${averageGradePercent}%` }}></div>
-                </div>
+              <div className="flex gap-4 mt-4 text-sm text-slate-500 flex-wrap">
+                <span className="flex items-center gap-2">
+                  <span className="w-3 h-3 rounded-full bg-emerald-500" /> {t('came')}
+                </span>
+                <span className="flex items-center gap-2">
+                  <span className="w-3 h-3 rounded-full bg-red-500" /> {t('didNotCome')}
+                </span>
               </div>
+            </div>
+
+            <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-100 space-y-3">
+              <h3 className="font-bold text-slate-800">{t('grades')}</h3>
+              {sortedStudentGrades.length ? (
+                sortedStudentGrades.map((entry, index) => (
+                  <div key={`${entry.date}-${index}`} className="flex items-center justify-between gap-4 p-3 rounded-lg border border-slate-100">
+                    <div>
+                      <p className="font-medium text-slate-800">{entry.date}</p>
+                      <p className="text-sm text-slate-500">{getAttendanceLabel(entry.status, language)}</p>
+                    </div>
+                    <div className="text-right">
+                      <p className="font-bold text-slate-800">{entry.grade || '-'}</p>
+                      <p className="text-sm text-slate-500">{entry.comment || '-'}</p>
+                    </div>
+                  </div>
+                ))
+              ) : (
+                <p className="text-slate-500">{t('noRecords')}</p>
+              )}
             </div>
           </div>
 
@@ -1848,38 +2218,36 @@ export default function App() {
         </div>
 
         <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-100 space-y-3">
-          <h3 className="font-bold text-slate-800">{t('grades')}</h3>
-          {studentGrades.length ? (
-            studentGrades.map((entry, index) => (
-              <div key={`${entry.date}-${index}`} className="flex items-center justify-between gap-4 p-3 rounded-lg border border-slate-100">
-                <div>
-                  <p className="font-medium text-slate-800">{entry.date}</p>
-                  <p className="text-sm text-slate-500">{getAttendanceLabel(entry.status, language)}</p>
-                </div>
-                <div className="text-right">
-                  <p className="font-bold text-slate-800">{entry.grade || '-'}</p>
-                  <p className="text-sm text-slate-500">{entry.comment || '-'}</p>
-                </div>
-              </div>
-            ))
-          ) : (
-            <p className="text-slate-500">{t('noRecords')}</p>
-          )}
-        </div>
-
-        <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-100 space-y-3">
           <h3 className="font-bold text-slate-800">{t('myTasks')}</h3>
-          {studentTasks.map((task) => (
-            <div key={task.id} className="flex items-center justify-between gap-4 p-3 rounded-lg border border-slate-100">
-              <div>
-                <p className="font-medium text-slate-800">{task.title}</p>
-                <p className="text-sm text-slate-500">{task.deadline}</p>
+          {studentTasks.map((task) => {
+            const submission = getTaskSubmission(task, currentUser?.id);
+
+            return (
+              <div key={task.id} className="flex items-center justify-between gap-4 p-3 rounded-lg border border-slate-100">
+                <div>
+                  <p className="font-medium text-slate-800">{task.title}</p>
+                  <p className="text-sm text-slate-500">{task.deadline}</p>
+                  {submission ? (
+                    <p className="text-sm text-slate-500">{submission.verified ? t('verified') : t('submitted')} • {submission.submittedAt}</p>
+                  ) : null}
+                </div>
+                <div className="flex items-center gap-2 flex-wrap justify-end">
+                  {submission ? (
+                    <a href={submission.photo} target="_blank" rel="noreferrer" className="task-submission-mini" title={t('submissionPhoto')}>
+                      <img src={submission.photo} alt={t('submissionPhoto')} />
+                    </a>
+                  ) : null}
+                  <label className="px-3 py-1 rounded-full text-xs font-medium bg-indigo-50 text-indigo-700 cursor-pointer">
+                    {submission ? t('submitted') : t('uploadSubmission')}
+                    <input type="file" accept="image/*" className="hidden" onChange={(event) => handleTaskSubmissionChange(task.id, event)} />
+                  </label>
+                  <span className={`px-3 py-1 rounded-full text-xs font-medium ${submission ? 'bg-emerald-100 text-emerald-700' : 'bg-amber-100 text-amber-700'}`}>
+                    {submission ? t('done') : t('inProgress')}
+                  </span>
+                </div>
               </div>
-              <span className={`px-3 py-1 rounded-full text-xs font-medium ${task.done ? 'bg-emerald-100 text-emerald-700' : 'bg-amber-100 text-amber-700'}`}>
-                {task.done ? t('done') : t('inProgress')}
-              </span>
-            </div>
-          ))}
+            );
+          })}
           {!studentTasks.length ? <p className="text-sm text-slate-500">{t('noTasks')}</p> : null}
         </div>
       </div>
@@ -1927,17 +2295,37 @@ export default function App() {
     <div className="space-y-6">
       <h2 className="text-2xl font-bold text-slate-800">{t('myTasks')}</h2>
       <div className="space-y-3">
-        {appData.tasks.map((task) => (
-          <div key={task.id} className="bg-white p-4 rounded-xl shadow-sm border border-slate-100 flex items-center justify-between">
-            <div>
-              <h3 className="font-medium text-slate-800">{task.title}</h3>
-              <p className="text-sm text-slate-500">{task.deadline}</p>
-            </div>
-            <span className={`px-3 py-1 rounded-full text-xs font-medium ${task.done ? 'bg-emerald-100 text-emerald-700' : 'bg-amber-100 text-amber-700'}`}>
-              {task.done ? t('done') : t('inProgress')}
-            </span>
-          </div>
-        ))}
+        {appData.tasks
+          .filter((task) => task.groupId === currentUser?.groupId)
+          .map((task) => {
+            const submission = getTaskSubmission(task, currentUser?.id);
+
+            return (
+              <div key={task.id} className="bg-white p-4 rounded-xl shadow-sm border border-slate-100 flex items-center justify-between gap-4">
+                <div>
+                  <h3 className="font-medium text-slate-800">{task.title}</h3>
+                  <p className="text-sm text-slate-500">{task.deadline}</p>
+                  {submission ? (
+                    <p className="text-sm text-slate-500">{submission.verified ? t('verified') : t('submitted')} • {submission.submittedAt}</p>
+                  ) : null}
+                </div>
+                <div className="flex items-center gap-2 flex-wrap justify-end">
+                  {submission ? (
+                    <a href={submission.photo} target="_blank" rel="noreferrer" className="task-submission-mini" title={t('submissionPhoto')}>
+                      <img src={submission.photo} alt={t('submissionPhoto')} />
+                    </a>
+                  ) : null}
+                  <label className="px-3 py-2 rounded-lg bg-indigo-50 text-indigo-700 text-sm font-medium cursor-pointer">
+                    {submission ? t('submitted') : t('uploadSubmission')}
+                    <input type="file" accept="image/*" className="hidden" onChange={(event) => handleTaskSubmissionChange(task.id, event)} />
+                  </label>
+                  <span className={`px-3 py-1 rounded-full text-xs font-medium ${submission ? 'bg-emerald-100 text-emerald-700' : 'bg-amber-100 text-amber-700'}`}>
+                    {submission ? t('done') : t('inProgress')}
+                  </span>
+                </div>
+              </div>
+            );
+          })}
       </div>
     </div>
   );
@@ -2049,6 +2437,11 @@ export default function App() {
                     isVisible={showAdminPassword}
                     onToggle={() => setShowAdminPassword((value) => !value)}
                   />
+                  {adminRegisterForm.password ? (
+                    <p className={`password-hint ${isStrongPassword(adminRegisterForm.password) ? 'strong' : ''}`}>
+                      {t(getPasswordStrengthMessageKey(adminRegisterForm.password))}
+                    </p>
+                  ) : null}
                   <PasswordInput
                     value={adminRegisterForm.confirmPassword}
                     onChange={(event) => setAdminRegisterForm({ ...adminRegisterForm, confirmPassword: event.target.value })}
@@ -2076,7 +2469,7 @@ export default function App() {
                   <input
                     value={studentLoginForm.account}
                     onChange={(event) => setStudentLoginForm({ ...studentLoginForm, account: event.target.value })}
-                    placeholder={t('account')}
+                    placeholder={`${t('email')} / ${t('account')}`}
                     className="w-full rounded-lg px-3 py-2"
                   />
                   <PasswordInput
@@ -2134,12 +2527,6 @@ export default function App() {
                       <option value="male">{t('male')}</option>
                       <option value="female">{t('female')}</option>
                     </select>
-                    <input
-                      value={studentLoginForm.account}
-                      onChange={(event) => setStudentLoginForm({ ...studentLoginForm, account: event.target.value })}
-                      placeholder={t('account')}
-                      className="w-full rounded-lg px-3 py-2"
-                    />
                     <PasswordInput
                       value={studentLoginForm.password}
                       onChange={(event) => setStudentLoginForm({ ...studentLoginForm, password: event.target.value })}
@@ -2147,6 +2534,11 @@ export default function App() {
                       isVisible={showStudentPassword}
                       onToggle={() => setShowStudentPassword((value) => !value)}
                     />
+                    {studentLoginForm.password ? (
+                      <p className={`password-hint ${isStrongPassword(studentLoginForm.password) ? 'strong' : ''}`}>
+                        {t(getPasswordStrengthMessageKey(studentLoginForm.password))}
+                      </p>
+                    ) : null}
                     <PasswordInput
                       value={studentLoginForm.confirmPassword}
                       onChange={(event) => setStudentLoginForm({ ...studentLoginForm, confirmPassword: event.target.value })}
@@ -2225,8 +2617,8 @@ export default function App() {
             </h1>
           </div>
 
-          <div className="flex items-center gap-4">
-            <div className="hidden sm:flex items-center gap-1 bg-slate-100 rounded-full p-1">
+          <div className="flex items-center gap-2 sm:gap-4">
+            <div className="flex items-center gap-1 bg-slate-100 rounded-full p-1" title={language === 'kg' ? 'Тилди өзгөртүү' : language === 'en' ? 'Change language' : 'Сменить язык'}>
               {['kg', 'ru', 'en'].map((lang) => (
                 <button
                   key={lang}
@@ -2280,6 +2672,51 @@ export default function App() {
           <div className="max-w-6xl mx-auto">{renderContent()}</div>
         </div>
       </main>
+      {previewSubmission ? (
+        <div className="submission-modal" role="dialog" aria-modal="true">
+          <div className="submission-modal-card">
+            <div className="flex items-start justify-between gap-4 mb-4">
+              <div>
+                <h3 className="font-bold text-slate-800">{previewSubmission.taskTitle}</h3>
+                <p className="text-sm text-slate-500">{t('submittedBy')}: {previewSubmission.studentName}</p>
+                <p className="text-sm text-slate-500">{t('submittedAt')}: {previewSubmission.submittedAt}</p>
+              </div>
+              <button
+                type="button"
+                onClick={() => setPreviewSubmission(null)}
+                className="p-2 text-slate-400 hover:text-red-600 hover:bg-red-50 rounded-lg"
+                aria-label={t('cancel')}
+              >
+                <X size={20} />
+              </button>
+            </div>
+            <div className="submission-modal-image">
+              <img src={previewSubmission.photo} alt={t('submissionPhoto')} />
+            </div>
+            <div className="flex justify-end gap-3 mt-4 flex-wrap">
+              <button
+                type="button"
+                onClick={() => setPreviewSubmission(null)}
+                className="bg-slate-100 text-slate-700 px-4 py-2 rounded-lg"
+              >
+                {t('cancel')}
+              </button>
+              <button
+                type="button"
+                onClick={() => {
+                  toggleTaskSubmissionVerified(previewSubmission.taskId, previewSubmission.studentId);
+                  setPreviewSubmission((previous) => (previous ? { ...previous, verified: !previous.verified } : previous));
+                }}
+                className={`px-4 py-2 rounded-lg ${
+                  previewSubmission.verified ? 'bg-emerald-100 text-emerald-700' : 'bg-indigo-600 text-white'
+                }`}
+              >
+                {previewSubmission.verified ? t('verified') : t('verifySubmission')}
+              </button>
+            </div>
+          </div>
+        </div>
+      ) : null}
     </div>
   );
 }
